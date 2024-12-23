@@ -81,6 +81,7 @@ body {
   vertical-align: middle;
   transition: color 0.3s;
   font-family: 'Passion+One', sans-serif;
+  font-weight: bold;
 }
 
 .sidebar ul li a:hover {
