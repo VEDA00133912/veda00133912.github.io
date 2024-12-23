@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+One&familiy=Passion+One&display=swap');
 
 body {
   background-color: #000000;
@@ -80,7 +80,7 @@ body {
   display: inline-block; 
   vertical-align: middle;
   transition: color 0.3s;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Passion+One', sans-serif;
 }
 
 .sidebar ul li a:hover {
