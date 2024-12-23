@@ -80,6 +80,7 @@ body {
   display: inline-block; 
   vertical-align: middle;
   transition: color 0.3s;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .sidebar ul li a:hover {
