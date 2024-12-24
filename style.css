@@ -15,7 +15,7 @@ body {
 .sidebar {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -220px; 
   width: 220px;
   height: 100%;
   background-color: #222222;
@@ -23,7 +23,12 @@ body {
   padding: 20px;
   box-sizing: border-box;
   font-family: 'Bebas Neue', sans-serif;
+  transition: left 0.3s ease-in-out;
   z-index: 1;
+}
+
+.sidebar.show {
+  left: 0; 
 }
 
 .sidebar .header {
@@ -88,6 +93,55 @@ body {
 .sidebar ul li a:hover {
   color: #ffffff;
 }
+
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  cursor: pointer;
+  display: flex;  
+  flex-direction: column; 
+  align-items: center; 
+  transition: opacity 0.3s ease;
+}
+
+.menu-toggle .bar {
+  width: 40px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 4px 0; 
+  border-radius: 2px; 
+}
+
+.menu-text {
+  color: #ffffff; 
+  font-size: 14px;
+  font-weight: bold; 
+  margin-top: 4px; 
+}
+
+.close {
+  color: Silver;
+  position: absolute; 
+  top: 10px; 
+  right: 20px; 
+  font-size: 36px;  
+  font-weight: bold; 
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: Gray; 
+  text-decoration: none; 
+}
+
+.sidebar.show ~ .menu-toggle {
+  opacity: 0;
+  pointer-events: none; 
+}
+
 
 .card {
   width: 400px;
