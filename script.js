@@ -25,3 +25,15 @@ document.querySelectorAll('.tab').forEach(tab => {
     }
   });
 });
+
+const menuToggle = document.getElementById('menuToggle');
+const sidebar = document.getElementById('sidebar');
+const closeBtn = document.getElementById('closeBtn');
+
+menuToggle.addEventListener('click', () => {
+  sidebar.classList.add('show'); 
+});
+
+closeBtn.addEventListener('click', () => {
+  sidebar.classList.remove('show'); 
+});
