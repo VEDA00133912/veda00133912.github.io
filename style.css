@@ -109,16 +109,16 @@ body {
 .menu-toggle .bar {
   width: 40px;
   height: 4px;
-  background-color: #ffffff;
   margin: 4px 0; 
   border-radius: 2px; 
+  color: Gray;
 }
 
 .menu-text {
-  color: #ffffff; 
   font-size: 14px;
   font-weight: bold; 
   margin-top: 4px; 
+  color: Gray;
 }
 
 .close {
